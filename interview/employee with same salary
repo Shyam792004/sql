@@ -1,0 +1,6 @@
+SELECT 
+    Salary,
+    STRING_AGG(Name, ', ') AS Employees
+FROM Employee
+GROUP BY Salary
+HAVING COUNT(*) > 1;
