@@ -4,3 +4,17 @@ SELECT
 FROM Employee
 GROUP BY Salary
 HAVING COUNT(*) > 1;
+
+| EmpID | Name   | Salary |
+| ----: | ------ | -----: |
+|   101 | Arun   |  30000 |
+|   102 | Bala   |  40000 |
+|   103 | Chitra |  30000 |
+|   104 | Divya  |  50000 |
+|   105 | Ezhil  |  40000 |
+
+
+output:
+Salary	Employees
+30000	Arun, Chitra
+40000	Bala, Ezhil
